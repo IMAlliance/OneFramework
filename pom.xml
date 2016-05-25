@@ -129,6 +129,11 @@
         <pluginManagement>
             <plugins>
                 <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>1.10</version>
+                </plugin>
+                <plugin>
                     <groupId>org.apache.karaf.tooling</groupId>
                     <artifactId>karaf-services-maven-plugin</artifactId>
                     <version>${karaf.version}</version>
