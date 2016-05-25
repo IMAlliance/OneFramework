@@ -22,7 +22,7 @@
                 <version>2.6</version>
                 <executions>
                     <execution>
-                        <id>make-config</id>
+                        <id>make-pack-config</id>
                         <phase>generate-resources</phase>
                         <goals>
                             <goal>single</goal>
@@ -30,6 +30,18 @@
                         <configuration>
                             <descriptors>
                                 <descriptor>src/assembly/assembly.xml</descriptor>
+                            </descriptors>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>make-devel-config</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <descriptors>
+                                <descriptor>src/assembly/assembly-devel.xml</descriptor>
                             </descriptors>
                         </configuration>
                     </execution>
@@ -48,8 +60,14 @@
                         <configuration>
                             <artifacts>
                                 <artifact>
-                                    <file>target/${project.artifactId}-${project.version}-cfg.tar.gz</file>
+                                    <file>target/${project.artifactId}-${project.version}-pack-config.tar.gz</file>
                                     <type>tar.gz</type>
+                                    <classifier>pack-config</classifier>
+                                </artifact>
+                                <artifact>
+                                    <file>target/${project.artifactId}-${project.version}-devel-config.tar.gz</file>
+                                    <type>tar.gz</type>
+                                    <classifier>devel-config</classifier>
                                 </artifact>
                             </artifacts>
                         </configuration>
