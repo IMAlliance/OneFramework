@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <features xmlns="http://karaf.apache.org/xmlns/features/v1.4.0" name="oneframework">
-    <feature name="one-swagger-ui" version="${project.version}">
+    <feature name="oneframework-swagger-ui" version="${project.version}">
         <feature>http-whiteboard</feature>
 
         <bundle start-level="100">mvn:${project.groupId}/swagger-ui/${project.version}</bundle>
