@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>oneframework</groupId>
@@ -32,8 +33,6 @@
 
         <karaf.version>4.0.4</karaf.version>
         <mysql.version>5.1.38</mysql.version>
-
-        <environment>develop</environment>
     </properties>
 
     <modules>
@@ -58,11 +57,10 @@
     </distributionManagement>
 
     <scm>
-        <connection>scm:git:http://git.haizhi.com/wbg/server-side.git</connection>
-        <developerConnection>scm:git:git@git.haizhi.com:wbg/server-side.git</developerConnection>
-        <url>http://git.haizhi.com/wbg/server-side</url>
-    <tag>HEAD</tag>
-  </scm>
+        <connection>scm:git:https://github.com/IMAlliance/OneFramework.git</connection>
+        <developerConnection>scm:git:https://github.com/IMAlliance/OneFramework.git</developerConnection>
+        <url>https://github.com/IMAlliance/OneFramework</url>
+    </scm>
 
     <repositories>
         <repository>
@@ -147,7 +145,7 @@
                 <plugin>
                     <groupId>org.apache.aries.blueprint</groupId>
                     <artifactId>blueprint-maven-plugin</artifactId>
-                    <version>1.3.0</version>
+                    <version>1.4.0</version>
                     <executions>
                         <execution>
                             <goals>
@@ -156,11 +154,6 @@
                             <phase>process-classes</phase>
                         </execution>
                     </executions>
-                    <configuration>
-                        <scanPaths>
-                            <scanPath>wbg.space</scanPath>
-                        </scanPaths>
-                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.felix</groupId>
@@ -278,7 +271,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <preparationGoals>
-                        clean install -P assembly -Denvironment=online
+                        clean install -P assembly
                     </preparationGoals>
                 </configuration>
             </plugin>

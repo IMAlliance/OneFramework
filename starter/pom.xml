@@ -48,10 +48,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>wbg.space.serve</groupId>
+            <groupId>oneframework</groupId>
             <artifactId>branding</artifactId>
-            <version>1.2.8-SNAPSHOT</version>
-            <scope>provided</scope>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.apache.karaf.features</groupId>
@@ -108,13 +107,14 @@
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>wbg.space.serve</groupId>
+            <groupId>oneframework</groupId>
             <artifactId>features</artifactId>
-            <version>1.2.8-SNAPSHOT</version>
+            <version>1.0.0-SNAPSHOT</version>
             <classifier>features</classifier>
             <scope>runtime</scope>
             <type>xml</type>
         </dependency>
+
         <!-- logging -->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -226,34 +226,6 @@
                                     <feature>${project.artifactId}</feature>
                                 </bootFeatures>
                             </configuration>
-                        </plugin>
-                        <plugin>
-                            <groupId>org.codehaus.mojo</groupId>
-                            <artifactId>wagon-maven-plugin</artifactId>
-                            <version>1.0</version>
-                            <executions>
-                                <execution>
-                                    <id>assembly-uploader</id>
-                                    <phase>install</phase>
-                                    <goals>
-                                        <goal>upload</goal>
-                                    </goals>
-                                    <configuration>
-                                        <fromDir>${project.basedir}/target</fromDir>
-                                        <includes>*.tar.gz</includes>
-                                        <url>ftp://package.wbg.space</url>
-                                        <toDir>assembly</toDir>
-                                        <serverId>wbg-assembly</serverId>
-                                    </configuration>
-                                </execution>
-                            </executions>
-                            <dependencies>
-                                <dependency>
-                                    <groupId>org.apache.maven.wagon</groupId>
-                                    <artifactId>wagon-ftp</artifactId>
-                                    <version>2.10</version>
-                                </dependency>
-                            </dependencies>
                         </plugin>
                     </plugins>
                 </pluginManagement>
