@@ -68,14 +68,6 @@
         </dependency>
         <dependency>
             <groupId>org.apache.karaf.features</groupId>
-            <artifactId>spring</artifactId>
-            <version>${karaf.version}</version>
-            <classifier>features</classifier>
-            <type>xml</type>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.karaf.features</groupId>
             <artifactId>enterprise</artifactId>
             <version>${karaf.version}</version>
             <classifier>features</classifier>
@@ -89,14 +81,6 @@
             <classifier>features</classifier>
             <scope>runtime</scope>
             <type>xml</type>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.karaf.cellar</groupId>
-            <artifactId>apache-karaf-cellar</artifactId>
-            <version>4.0.0</version>
-            <classifier>features</classifier>
-            <type>xml</type>
-            <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.shiro</groupId>
