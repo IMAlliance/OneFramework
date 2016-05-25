@@ -38,6 +38,7 @@
     <modules>
         <module>starter</module>
         <module>features</module>
+        <module>assembly</module>
 
         <module>bundles/branding</module>
         <module>bundles/swagger-ui</module>
@@ -128,6 +129,11 @@
 
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>2.6</version>
+                </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>build-helper-maven-plugin</artifactId>
