@@ -5,4 +5,15 @@
 
         <bundle start-level="100">mvn:${project.groupId}/swagger-ui/${project.version}</bundle>
     </feature>
+
+    <feature name="oneframework-rest" version="${project.version}">
+        <feature>http</feature>
+        <feature>cxf</feature>
+        <feature>cxf-commands</feature>
+
+        <feature>camel-jackson</feature>
+
+        <bundle>mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.7.2</bundle>
+        <bundle>mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.7.2</bundle>
+    </feature>
 </features>
