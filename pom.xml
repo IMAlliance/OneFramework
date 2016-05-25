@@ -31,7 +31,7 @@
         <org.osgi.version>5.0.0</org.osgi.version>
         <zookeeper.version>3.4.8</zookeeper.version>
 
-        <karaf.version>4.0.4</karaf.version>
+        <karaf.version>4.0.5</karaf.version>
         <mysql.version>5.1.38</mysql.version>
     </properties>
 
