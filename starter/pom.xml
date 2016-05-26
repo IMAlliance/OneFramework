@@ -51,6 +51,7 @@
             <groupId>oneframework</groupId>
             <artifactId>branding</artifactId>
             <version>1.0.0-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.karaf.features</groupId>
@@ -419,7 +420,8 @@
                             <feature>feature</feature>
                             <feature>bundle</feature>
                             <feature>ssh</feature>
-                            <feature>log</feature>
+							<feature>log</feature>
+							<feature>oneframework-swagger-ui</feature>
                             <feature>${project.artifactId}</feature>
                         </bootFeatures>
                     </configuration>
