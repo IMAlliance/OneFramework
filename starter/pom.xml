@@ -401,6 +401,7 @@
                             </bootRepository>
                         </bootRepositories>
                         <bootFeatures>
+                            <feature>service</feature>
                             <feature>wrap</feature>
                             <feature>config</feature>
                             <feature>system</feature>
