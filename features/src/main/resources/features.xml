@@ -16,4 +16,15 @@
         <bundle>mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.7.2</bundle>
         <bundle>mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.7.2</bundle>
     </feature>
+
+    <feature name="oneframework-jdbc" version="${project.version}">
+        <feature>pax-jdbc</feature>
+        <feature>pax-jdbc-spec</feature>
+        <feature>pax-jdbc-config</feature>
+        <feature>pax-jdbc-h2</feature>
+        <feature>pax-jdbc-mariadb</feature>
+        <feature>pax-jdbc-mysql</feature>
+        <feature>pax-jdbc-postgresql</feature>
+        <feature>pax-jdbc-pool-dbcp2</feature>
+    </feature>
 </features>
