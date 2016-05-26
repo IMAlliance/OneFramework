@@ -180,6 +180,11 @@
                             </goals>
                         </execution>
                     </executions>
+                    <configuration>
+                        <instructions>
+                            <Bundle-Blueprint-Annotation>true</Bundle-Blueprint-Annotation>
+                        </instructions>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
