@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <features xmlns="http://karaf.apache.org/xmlns/features/v1.4.0" name="oneframework">
+
+    <feature name="oneframework-core" version="${project.version}">
+        <bundle>mvn:oneframework/core/${project.version}</bundle>
+    </feature>
+
     <feature name="oneframework-swagger-ui" version="${project.version}">
+        <feature>oneframework-core</feature>
         <feature>http-whiteboard</feature>
 
         <bundle start-level="100">mvn:${project.groupId}/swagger-ui/${project.version}</bundle>
     </feature>
 
     <feature name="oneframework-rest" version="${project.version}">
+        <feature>oneframework-core</feature>
         <feature>http</feature>
         <feature>cxf</feature>
         <feature>cxf-commands</feature>
@@ -18,6 +25,7 @@
     </feature>
 
     <feature name="oneframework-jdbc" version="${project.version}">
+        <feature>oneframework-core</feature>
         <feature>pax-jdbc</feature>
         <feature>pax-jdbc-spec</feature>
         <feature>pax-jdbc-config</feature>

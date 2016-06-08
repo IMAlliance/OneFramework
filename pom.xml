@@ -42,6 +42,7 @@
 
         <module>bundles/branding</module>
         <module>bundles/swagger-ui</module>
+        <module>bundles/core</module>
     </modules>
 
     <distributionManagement>
@@ -62,14 +63,6 @@
         <developerConnection>scm:git:https://github.com/IMAlliance/OneFramework.git</developerConnection>
         <url>https://github.com/IMAlliance/OneFramework</url>
     </scm>
-
-    <repositories>
-        <repository>
-            <id>haizhi</id>
-            <name>Haizhi</name>
-            <url>http://nexus.haizhi.com/content/groups/public</url>
-        </repository>
-    </repositories>
 
     <dependencyManagement>
         <dependencies>
