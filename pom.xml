@@ -15,7 +15,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <project.build.compilerLevel>1.8</project.build.compilerLevel>
+        <project.build.compilerLevel>1.7</project.build.compilerLevel>
 
         <build.javadoc.version>2.10.3</build.javadoc.version>
         <build.bundle.version>3.0.1</build.bundle.version>
