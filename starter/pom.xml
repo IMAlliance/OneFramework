@@ -51,6 +51,7 @@
             <groupId>oneframework</groupId>
             <artifactId>assembly</artifactId>
             <version>1.0.0-SNAPSHOT</version>
+            <type>pom</type>
             <scope>provided</scope>
         </dependency>
         <dependency>
