@@ -49,6 +49,12 @@
     <dependencies>
         <dependency>
             <groupId>oneframework</groupId>
+            <artifactId>assembly</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>oneframework</groupId>
             <artifactId>branding</artifactId>
             <version>1.0.0-SNAPSHOT</version>
             <scope>provided</scope>
